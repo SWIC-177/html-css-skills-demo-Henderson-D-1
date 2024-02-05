@@ -5,7 +5,66 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML-CSS Template</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <section>
+      <h2>Hello, I'm Derrick Henderson</h2>
+      <p>There are few interesting aspects of my life, here they are:</p>
+      <hr />
+      <p>
+        I am a psuedo-electrical engineer based in Belleville. I initially began
+        my journey as an entrepreneur, focusing primarily in e-commerece with a
+        product specialization of consumer electronics. The products that my
+        company was selling were mainly items that needed to be tested or
+        subsequently repaired. As a small company, I then needed to learn how to
+        perform repair on basic electronics, this lead me to working in a
+        company repairing vehicle electronics, creating test rigs for various
+        makes/models of vehicles, and understanding the intrinsic knowledge
+        needed to progress.
+      </p>
+      <hr />
+      <p>
+        I have been in the Army Reserves for almost six years at this point.
+        While it has lead me to experiences that range vastly on the "Enjoyable"
+        scale, here are a few images of the most enjoyable experiences:
+      </p>
+      <img
+        src="hmv.jpg"
+        alt="A sunset with military vehicles in the background."
+      />
+      <img
+        src="rsa.jpg"
+        alt="A long dirt road with a large satellite on the right of a military semi."
+      />
+      <img src="tur.jpg" alt="A firearm in the turret of a military vehicle." />
+      <hr />
+      <p>Here are also a few pictures of my office!</p>
+      <br />
+      <img src="off1.jpg" alt="An office with two desks" />
+      <img
+        src="off2.jpg"
+        alt="A desk with various pictures on the wall and items on the desk"
+      />
+      <hr />
+      <p>
+        Feel free to reach out at any time,
+        <a href="mailto:2019dwh@gmail.com">here!</a>.
+      </p>
+    </section>
+    <section>
+      <form action="process_form.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
 </html>
