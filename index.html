@@ -9,8 +9,10 @@
     />
     <title>About Me</title>
   </head>
-  <body class="h-14 bg-gradient-to-r from-gray-600 to-red-900">
-    <section class="container mx-auto px-4 py-12">
+  <body
+    class="select-none bg-gradient-to-r from-gray-600 to-red-900 p-4 text-red-100"
+  >
+    <section class="container mx-auto box-border border-4 px-4 py-12">
       <h2 class="mb-4 text-3xl font-bold">Hello, I'm Derrick Henderson</h2>
       <p class="mb-4">
         There are few interesting aspects of my life, here they are:
@@ -28,7 +30,7 @@
         needed to progress.
       </p>
       <hr class="my-4" />
-      <p class="mb-4 flex">
+      <p class="mb-4">
         I have been in the Army Reserves for almost six years at this point.
         While it has lead me to experiences that range vastly on the "Enjoyable"
         scale, here are a few images of the most enjoyable experiences:
@@ -52,24 +54,38 @@
       </div>
       <hr class="my-4" />
       <p class="mb-4">Here are also a few pictures of my office!</p>
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div class="mb-4 flex">
         <img
           src="off1.jpg"
+          class="size-24 px-1"
           alt="An office with two desks"
-          class="mb-4 w-full md:mb-0"
         />
         <img
           src="off2.jpg"
+          class="size-24 px-1"
           alt="A desk with various pictures on the wall and items on the desk"
-          class="w-full"
         />
       </div>
       <hr class="my-4" />
-      <p class="mb-4">
-        Feel free to reach out at any time,
-        <a href="mailto:2019dwh@gmail.com" class="text-blue-500">here!</a>.
-      </p>
-    </section>
+      <p class="mb-4 flex items-center"></p>
+      <a href="mailto:2019dwh@gmail.com" class="mb-4 flex items-center justify-center text-sm box-border border-2 bg-gray-700 p-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mr-2 h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+          />
+        </svg>
+        <span>Feel free to reach out at any time</span>
+      </a>
+      
     <section class="container mx-auto px-4 py-12">
       <form action="process_form.php" method="post" class="mx-auto max-w-lg">
         <label for="name" class="mb-2 block">Your Name:</label>
@@ -95,7 +111,7 @@
         ></textarea>
         <button
           type="submit"
-          class="w-full rounded-md bg-blue-500 px-4 py-2 text-white"
+          class="hover: w-full rounded-md bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
         >
           Submit
         </button>
