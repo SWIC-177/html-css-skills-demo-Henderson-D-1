@@ -1,17 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>HTML-CSS Template</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>About Me</title>
   </head>
-  <body>
-    <section>
-      <h2>Hello, I'm Derrick Henderson</h2>
-      <p>There are few interesting aspects of my life, here they are:</p>
-      <hr />
-      <p>
+  <body class="h-14 bg-gradient-to-r from-gray-600 to-red-900">
+    <section class="container mx-auto px-4 py-12">
+      <h2 class="mb-4 text-3xl font-bold">Hello, I'm Derrick Henderson</h2>
+      <p class="mb-4">
+        There are few interesting aspects of my life, here they are:
+      </p>
+      <hr class="my-4" />
+      <p class="mb-4">
         I am a psuedo-electrical engineer based in Belleville. I initially began
         my journey as an entrepreneur, focusing primarily in e-commerece with a
         product specialization of consumer electronics. The products that my
@@ -22,47 +27,78 @@
         makes/models of vehicles, and understanding the intrinsic knowledge
         needed to progress.
       </p>
-      <hr />
-      <p>
+      <hr class="my-4" />
+      <p class="mb-4 flex">
         I have been in the Army Reserves for almost six years at this point.
         While it has lead me to experiences that range vastly on the "Enjoyable"
         scale, here are a few images of the most enjoyable experiences:
       </p>
-      <img
-        src="hmv.jpg"
-        alt="A sunset with military vehicles in the background."
-      />
-      <img
-        src="rsa.jpg"
-        alt="A long dirt road with a large satellite on the right of a military semi."
-      />
-      <img src="tur.jpg" alt="A firearm in the turret of a military vehicle." />
-      <hr />
-      <p>Here are also a few pictures of my office!</p>
-      <br />
-      <img src="off1.jpg" alt="An office with two desks" />
-      <img
-        src="off2.jpg"
-        alt="A desk with various pictures on the wall and items on the desk"
-      />
-      <hr />
-      <p>
+      <div class="mb-4 flex">
+        <img
+          class="size-24 px-1"
+          src="hmv.jpg"
+          alt="A sunset with military vehicles in the background."
+        />
+        <img
+          src="rsa.jpg"
+          class="size-24 px-1"
+          alt="A long dirt road with a large satellite on the right of a military semi."
+        />
+        <img
+          src="tur.jpg"
+          alt="A firearm in the turret of a military vehicle."
+          class="size-24 px-1"
+        />
+      </div>
+      <hr class="my-4" />
+      <p class="mb-4">Here are also a few pictures of my office!</p>
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <img
+          src="off1.jpg"
+          alt="An office with two desks"
+          class="mb-4 w-full md:mb-0"
+        />
+        <img
+          src="off2.jpg"
+          alt="A desk with various pictures on the wall and items on the desk"
+          class="w-full"
+        />
+      </div>
+      <hr class="my-4" />
+      <p class="mb-4">
         Feel free to reach out at any time,
-        <a href="mailto:2019dwh@gmail.com">here!</a>.
+        <a href="mailto:2019dwh@gmail.com" class="text-blue-500">here!</a>.
       </p>
     </section>
-    <section>
-      <form action="process_form.php" method="post">
-        <label for="name">Your Name:</label>
-        <input type="text" name="name" required />
-
-        <label for="email">Your Email:</label>
-        <input type="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea name="message" rows="4" required></textarea>
-
-        <button type="submit">Submit</button>
+    <section class="container mx-auto px-4 py-12">
+      <form action="process_form.php" method="post" class="mx-auto max-w-lg">
+        <label for="name" class="mb-2 block">Your Name:</label>
+        <input
+          type="text"
+          name="name"
+          required
+          class="mb-4 w-full rounded-md border px-4 py-2"
+        />
+        <label for="email" class="mb-2 block">Your Email:</label>
+        <input
+          type="email"
+          name="email"
+          required
+          class="mb-4 w-full rounded-md border px-4 py-2"
+        />
+        <label for="message" class="mb-2 block">Message:</label>
+        <textarea
+          name="message"
+          rows="4"
+          required
+          class="mb-4 w-full rounded-md border px-4 py-2"
+        ></textarea>
+        <button
+          type="submit"
+          class="w-full rounded-md bg-blue-500 px-4 py-2 text-white"
+        >
+          Submit
+        </button>
       </form>
     </section>
   </body>
