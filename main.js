@@ -10,6 +10,7 @@ formEls.forEach((el) => {
     const elError = ERRORS.find((error) => error.id === e.target.id);
     if (!elError.validate(e.target.value)) renderError(e.target, elError.msg);
     else hideError(e.target);
+    console.log(elError);
   });
 });
 
@@ -18,5 +19,6 @@ formEls.forEach((el) => {
     const elError = ERRORS.find((error) => error.id === e.target.id);
     elError.isTouched = true;
     hideError(e.target);
+    console.log(elError);
   });
 });
