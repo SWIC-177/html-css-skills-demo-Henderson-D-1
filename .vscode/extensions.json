@@ -1,9 +1,11 @@
 {
   "recommendations": [
+    "aaron-bond.better-comments",
+    "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "htmlhint.vscode-htmlhint",
+    "mgmcdermott.vscode-language-babel",
+    "streetsidesoftware.code-spell-checker",
     "usernamehw.errorlens",
-    "vsls-contrib.codetour",
-    "bradlc.vscode-tailwindcss"
+    "vivaxy.vscode-conventional-commits"
   ]
 }
