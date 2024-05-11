@@ -19,7 +19,7 @@ export const ERRORS = [
     id: "phone",
     msg: "Please enter a valid phone number.",
     validate(val) {
-      return validator.isMobilePhone(val, "en-US");
+      return validator.isMobilePhone(val);
     },
   },
   {
